@@ -1,0 +1,159 @@
+body {
+    background: no-repeat url(img/фон.svg);
+    margin: 0;
+    height: 100%;
+    background-size: cover;
+}
+.header {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  
+  .wrapper {
+    width: 80%;
+  }
+  
+  .logo,
+  .menu {
+    display: inline-block;
+  }
+  
+  .logo {
+    width: 190px;
+    height: 60px;
+    background: no-repeat url(img/logo.svg);
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    color: #f8eee4;
+    font: Museo Sans Cyrl , arial, helvetica, sans-serif;
+  }
+  
+  .menu__item {
+    position: relative;
+    margin-right: 26px;
+    font: Museo Sans Cyrl , arial, helvetica, sans-serif;
+    text-decoration: none;
+    color: #f8eee4;
+    font-style: normal;
+    line-height: 130px;
+  }
+
+  .menu__item:last-child {
+    margin-right: 0;
+  }
+  
+  .main {
+    padding: 0 63% 100px 0;
+  }
+  
+  .main__title {
+    color: #f8eee4;
+    margin: 0 0 40px 0;
+    font: 50px/65px  'PT Serif', serif, arial, helvetica, sans-serif;
+  }
+
+  .main__subtitle {
+    color: #f8eee4;
+    margin: 0 0 40px 0;
+    font: 22px Museo Sans Cyrl , arial, helvetica, sans-serif;
+  }
+
+  .main__title_transparent {
+    opacity: 0.6;
+    font-weight: bold;
+    font-size: 280px;
+    line-height: 371px;
+    display: flex;
+    align-items: center;
+    font:  'PT Serif', serif, arial, helvetica, sans-serif;
+  }
+
+  .main__title_contrasting {
+    font-weight: bold;
+    font-size: 98px;
+    line-height: 130px;
+    display: flex;
+    align-items: center;
+    font: 'PT Serif', serif, arial, helvetica, sans-serif;
+    
+  }
+  
+  .main__button {
+    padding: 14px 16px;
+    background: #D4BEA3;
+    border-radius: 48px;
+    color: white;
+    transition: all 150ms ease-in-out;
+    position: relative;
+  }
+  
+  #checkbox {
+    display: none;
+  }
+
+ @media (max-width: 1920px) {
+  .wrapper {   
+     width: 80%;
+     margin-left: 190px;
+    }
+  .logo {
+    margin-left: 10px;
+    margin-top: 50px;
+  }
+
+  .menu {
+    padding-right: 120px;
+    margin-top: 10px;
+    font-size: 28px;
+    margin-left: 20px;
+    padding-left: 35px;
+    max-width: 300px;
+    min-width: 150px;
+  }
+
+  .menu__item {
+
+  }
+
+  .main {
+
+  }
+
+  .main__title_transparent {
+    position: relative;
+    margin-top: -60px;
+    margin-left: 15px;
+    max-width: 500px;
+    min-width: 200px;
+    font-weight: 700;
+    padding-right: 30px;
+  }
+
+  .main__title_contrasting {
+    position: absolute;
+    margin-top: -185px;
+    margin-left: 90px;
+  }
+
+  .main__subtitle {
+    margin-top: -33px;
+    margin-left: 33px;
+    max-width: 530px;
+    min-width: 300px;
+  }
+
+  .main__button {
+    max-width: 500px;
+    min-width: 300px;
+    height: 62px;
+    margin-left: 32px;
+    font-family: Museo Sans Cyrl;
+    font-size: 22px;
+    margin-top: -4px;
+  }
+  }
