@@ -1,10 +1,14 @@
-body {
+  html {
+    overflow: hidden;
+  }
+
+  body {
     background: no-repeat url(img/фон.svg);
     margin: 0;
     height: 100%;
     background-size: cover;
-}
-.header {
+ }
+  .header {
     padding: 40px 0;
     display: flex;
     justify-content: space-between;
@@ -30,13 +34,13 @@ body {
     display: flex;
     align-items: center;
     color: #f8eee4;
-    font: Museo Sans Cyrl , arial, helvetica, sans-serif;
+    font-family: Museo Sans Cyrl , arial, helvetica, sans-serif;
   }
   
   .menu__item {
     position: relative;
     margin-right: 26px;
-    font: Museo Sans Cyrl , arial, helvetica, sans-serif;
+    font-family: Museo Sans Cyrl , arial, helvetica, sans-serif;
     text-decoration: none;
     color: #f8eee4;
     font-style: normal;
@@ -60,17 +64,17 @@ body {
   .main__subtitle {
     color: #f8eee4;
     margin: 0 0 40px 0;
-    font: 22px Museo Sans Cyrl , arial, helvetica, sans-serif;
+    font-size: 22px;
+    font-family: Museo Sans Cyrl , arial, helvetica, sans-serif;
   }
 
   .main__title_transparent {
     opacity: 0.6;
-    font-weight: bold;
     font-size: 280px;
     line-height: 371px;
     display: flex;
     align-items: center;
-    font:  'PT Serif', serif, arial, helvetica, sans-serif;
+    font-family:  'PT Serif', serif, arial, helvetica, sans-serif;
   }
 
   .main__title_contrasting {
@@ -79,7 +83,7 @@ body {
     line-height: 130px;
     display: flex;
     align-items: center;
-    font: 'PT Serif', serif, arial, helvetica, sans-serif;
+    font-family: 'PT Serif', serif, arial, helvetica, sans-serif;
     
   }
   
@@ -96,52 +100,55 @@ body {
     display: none;
   }
 
- @media (max-width: 1920px) {
+@media (max-width: 1920px) {
   .wrapper {   
-     width: 80%;
-     margin-left: 190px;
+    width: 80%;
+    margin-left: 190px;
     }
+
   .logo {
     margin-left: 10px;
     margin-top: 50px;
   }
 
   .menu {
+    margin: 10px 16px 0 10px ;
     padding-right: 120px;
-    margin-top: 10px;
-    font-size: 28px;
-    margin-left: 20px;
     padding-left: 35px;
     max-width: 300px;
     min-width: 150px;
+    font-size: 22px;
   }
 
   .menu__item {
-
-  }
-
-  .main {
-
+    padding-left: 15px;
+    max-width: 150px;
+    min-width: 60px;
   }
 
   .main__title_transparent {
     position: relative;
-    margin-top: -60px;
+    margin-top: -54px;
     margin-left: 15px;
     max-width: 500px;
     min-width: 200px;
     font-weight: 700;
     padding-right: 30px;
+    font-weight: 700;
+    letter-spacing: 10px;
   }
 
   .main__title_contrasting {
     position: absolute;
-    margin-top: -185px;
+    margin-top: -175px;
     margin-left: 90px;
+    letter-spacing: 4px;
+    max-width: 500px;
+    min-width: 250px;
   }
 
   .main__subtitle {
-    margin-top: -33px;
+    margin-top: -20px;
     margin-left: 33px;
     max-width: 530px;
     min-width: 300px;
@@ -156,4 +163,68 @@ body {
     font-size: 22px;
     margin-top: -4px;
   }
+
+  .img1 {
+    position: relative;
+    left: 55%;
+    bottom: 550px;
+  }
+
+  .img2 {
+    position: relative;
+    left: 57%;
+    bottom: 570px;
+  }
+
+  .img3 {
+    position: relative;
+    left: 59%;
+    bottom: 565px;
+  }
+  }
+
+@media (max-width: 1720px) {
+  .wrapper {
+    width: 80%;
+    margin-left: 190px;
+    }
+
+  .logo {
+    margin-top: 50px;
+    }
+
+  .menu {
+    margin: 10px -418px 0 10px ;
+    padding-right: 120px;
+    padding-left: 35px;
+    max-width: 300px;
+    min-width: 150px;
+    font-size: 22px;
+    }
+
+  .main {
+      padding-right: 30px;
+    }
+
+  .main__subtitle {
+    word-spacing: 1px;
+    }
+
+  .img1 {
+    position: relative;
+    left: 77%;
+    bottom: 545px;
+  }
+
+  .img2 {
+    position: relative;
+    left: 80%;
+    bottom: 570px;
+    }
+
+  .img3 {
+    position: relative;
+    left: 82%;
+    bottom: 565px;
+    }
   }
