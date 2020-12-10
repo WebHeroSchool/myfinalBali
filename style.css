@@ -181,6 +181,10 @@
     left: 59%;
     bottom: 565px;
   }
+
+  .img4 {
+    display: none;
+  }
   }
 
 @media (max-width: 1720px) {
@@ -227,4 +231,146 @@
     left: 82%;
     bottom: 565px;
     }
+
+ .img4 {
+   display: none;
+    }
   }
+
+
+@media  (max-width: 1218px) {
+  .wrapper { 
+    width: 85%;
+    padding-right: 110px;
+    margin-left: 30px;
+    }
+  
+  .header {
+    margin-top: 20px;
+    width: 95%;
+    }
+  
+  .logo {
+    font-size: 27px;
+    margin-left: 43px;
+    margin-top: 45px;
+    }
+
+  .menu {
+    margin-right: -548px;
+  }
+
+  .menu__item-start {
+    padding-left: 24px;
+    letter-spacing: 1px;
+  }
+
+  .menu__item-services {
+    padding-right: 40px;
+    margin-left: -10px;
+    letter-spacing: 2px;
+  }
+
+  .menu__item-about {
+    letter-spacing: 3px;
+  }
+
+  .menu__item-blog {
+    margin-left: 11px;
+    letter-spacing: 3px;
+  }
+
+  .menu__item-contact {
+    letter-spacing: 2px;
+  }
+
+  .main__title_transparent {
+    font-size: 350px;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding-left: 20px;
+    letter-spacing: 0px;
+  }
+
+  .main__title_contrasting {
+    margin-top: px;
+    margin-left: 135px;
+    padding-top: 15px;
+    letter-spacing: 11px;
+    display: flex;
+    align-items: center;
+  }
+
+  .main__button {
+    font: 25px/30px 'museo_sans_cyrl500', arial, helvetica, sans-serif;
+    display: inline-block;
+    background: #d4bea3;
+    padding: 17px 87px;
+    border-radius: 48px;
+    position: relative;
+    height: 80px;
+    left: 40px;
+}
+
+  .main__subtitle {
+    margin-top: 22px;
+    margin-left: 60px;
+    font-size: 24px;
+    padding-right: 110px;
+    max-width: 600px;
+    min-width: 300px;
+    letter-spacing: px;
+    line-height: 30px;
+    word-spacing: 2px;
+  }
+
+  .img1 {
+    position: relative;
+    left: 90%;
+    height: 495px;
+    bottom: 610px;
+  }
+
+  .img2 {
+    position: relative;
+    left: 93%;
+    height: 430px;
+    bottom: 640px;
+  }
+
+  .img3 {
+    position: relative;
+    width: 8%;
+    left: 96%;
+    height: 440px;
+    bottom: 635px;
+  }
+}
+
+@media  (max-width: 910px) {
+  .img3 {
+    display: none;
+  }
+}
+
+@media  (max-width: 865px) {
+  .img1 {
+    display: none;
+  }
+
+  .img2 {
+    display: none;
+  }
+
+  .menu {
+    padding: 4px 10px 7px 0;
+    margin-right: -165px;
+  }
+}
+
+@media  (max-width: 480px) {
+  .menu {
+    display: none;
+  }
+}
+
