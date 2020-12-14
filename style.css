@@ -369,8 +369,13 @@
 }
 
 @media  (max-width: 480px) {
-  .menu {
-    display: none;
+  body {
+    height: 100%;
+  }
+
+  .wrapper {
+    margin: 0;
+    width: 86%;
   }
 
   .logo {
@@ -378,80 +383,63 @@
     height: 150px;
     width: 160px;
     padding: 0 30px 0 50px;
-    margin: 19px 0 0 45px;
+    margin: 23px 0 0 80px;
+}
+  .menu {
+    display: none;
   }
 
-  .wrapper {
-    width: 86%;
-  }
-
-  .menu-line {
-    justify-content: flex-end;
-    display: flex;
-    position: absolute;
+  .menu-line { 
     width: 50px;
     height: 5px;
-    top: 130px;
     background: #fcF5ed;
-    right: 0;
-    margin-right: -310px;
-    max-width: 400px;
-    min-width: 50px;
+    margin-right: -375px;
+    margin-top: 50px;
+
   }
 
   .menu-line::after {
-    position: absolute;
     top: 10px;
     content: '';
     width: 50px;
     height: 5px;
-    display: block;
     background: #fcF5ed;
+    display: inline-block;
   }
 
- .menu-line::before {
-  position: absolute;
-  top: -10px;
-  content: '';
-  width: 50px;
-  height: 5px;
-  display: block;
-  background:#fcF5ed;
-  }
+  .menu-line::before {
+    margin-top: 15px;
+    content: '';
+    width: 50px;
+    height: 5px;
+    display: inline-block;
+    background:#fcF5ed;
+    }
 
   #checkbox:checked ~ .menu-line::after {
-    transform: rotate(45deg);
-    top: 0;
-  }
-
+      transform: rotate(45deg);
+      top: 0;
+      background-color: #000;
+    }
+    
   #checkbox:checked ~ .menu-line {
-    background-color: transparent;
-  }
-
+      background-color: transparent;
+    }
+    
   #checkbox:checked ~ .menu-line::before {
-    transform: rotate(-45deg);
-    top: 0;
-  }
- 
-  #checkbox:checked ~ .menu {
-    display: flex;
-    flex-direction: column;
-    visibility: visible;
-    background: #fff;
-    position: absolute;
-    width: 375px;
-    height: 700px;
-    z-index: 1;
-  }
+      transform: rotate(-45deg);
+      top: 0;
+      background-color: #000;
+    }
 
-  label {
-    z-index: 2;
+  #checkbox:checked ~ .menu { 
+
   }
 
   .main__subtitle {
     font-size: 35px;
-    padding: 0 36px;
-    margin: 120px 0 35px 24px;
+    padding: 0 68px;
+    margin: 114px 0 35px 24px;
     max-width: 120%;
     min-width: 560px;
     display: flex;
@@ -461,26 +449,25 @@
   }
   
   .main__title_contrasting {
-    margin-top: -150px;
+    margin-top: -160px;
     letter-spacing: 5px;
     font-size: 120px;
-    margin-left: 120px;
+    margin-left: 150px;
   }
-
+  
   .main__title_transparent {
     margin-top: -50px;
-    margin-left: -15px;
+    margin-left: 15px;
     letter-spacing: 9px;
   }
-
+  
   .main__button {
     font-size: 35px;
     left: 140px;
     display: inline-block;
-    max-width: 600px;
-    min-width: 430px;
+    min-width: 420px;
     margin-top: 38px;
-    margin-left: -20px;
+    margin-left: 15px;
     height: 90px;
   }
 }
