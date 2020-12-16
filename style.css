@@ -1,6 +1,7 @@
   body {
     background: no-repeat url(img/фон.svg);
     background-size: cover;
+    margin: 0;
  }
   .header {
     padding: 40px 0;
@@ -32,7 +33,6 @@
   
   .menu__item {
     position: relative;
-    margin-right: 26px;
     font-family: Museo Sans Cyrl , arial, helvetica, sans-serif;
     text-decoration: none;
     color: #f8eee4;
@@ -86,45 +86,80 @@
 
 @media (max-width: 1920px){
   .header {
-    
-    }
-  
+    margin-bottom: 60px;
+  }
+
   .logo {
-    margin-top: 70px;
-    margin-left: 86px;
-    background-size: 90%;
-    height: 70px;
+    margin-top: 52px;
+    margin-left: 200px;
+    background-size: 77%;
     }
   
   .menu {
-    font-size: 25px;
-    margin-top: 30px;
-    justify-content: end;
+    display: flex;
+    font-size: 22px;
+    margin-top: 10px;
+    justify-content: flex-end;
+    margin-right: 33px;
+    padding-right: 82px;
     }
   
   .menu__item {
-
+    padding: 0 5px;
+    margin: 0 15px;
     }
 
-  .menu__item-start {
+  .main {
+    margin: 0 0 32px 197px
+    }
 
+  .main__title_contrasting {
+    letter-spacing: 4px;
+    position: absolute;
+    top: 501px;
+    left: 282px;
   }
 
-  .menu__item-services {
-
+  .main__title_transparent {
+    font-weight: 1000;
+    margin: 0 0 2px 6px;
+    padding-bottom: 34px;
+    letter-spacing: 12px;
   }
 
-  .menu__item-about {
-
+  .main__subtitle {
+    max-width: 28%;
+    font-size: 22px;
+    padding-left: 24px;
+    margin: 0 0 18px 0;
+    top: 654px;
+    position: absolute;
+    word-spacing: 1px;
   }
 
-  . menu__item-blog {
-
+  .main__button {
+    position: relative;
+    font-size: 24px;
+    width: 293px;
+    height: 64px;
+    margin: 81px 0 0 25px;
   }
 
-  . menu__item-contact {
-
+  .pic {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 386px;
+    right: 0;
   }
 
+  .pic__item {
+    margin-right: 34px;
+ }
+
+   .pic__item:last-child {
+     margin-right: 0;
+   }
   }
 
