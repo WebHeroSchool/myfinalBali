@@ -161,14 +161,9 @@
      margin-right: 0;
    }
 
-  .pic__adaptation,
-  .pic__item-adaptation3 {
-    display: none;
-  }
-
   .pic__item-adaptation33 {
     display: none;
-}
+ }
 }
 @media (max-width: 1635px) {
   .header {
@@ -346,6 +341,7 @@
   .pic__item-adaptation3 {
     display: none;
   }
+
   .pic__item-adaptation33 {
     visibility: visible;
     display: block;
@@ -401,6 +397,7 @@
 
   #checkbox:checked ~ .menu-line {
     background-color: transparent;
+    z-index: 4;
   }
 
   #checkbox:checked ~ .menu-line::before {
