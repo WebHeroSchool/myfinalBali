@@ -1,6 +1,5 @@
   body {
     background: no-repeat url(img/фон.svg);
-    background-size: cover;
     margin: 0;
  }
   .header {
@@ -361,6 +360,136 @@
 }
 
 @media (max-width: 630px) {
+  .logo {
+    margin: 42px 0 0 41px;
+  }
 
+  .menu-line {
+    background: #fcf5ed;
+    position: absolute;
+    top: 65px;
+    width: 25px;
+    height: 3px;
+    left: 317px;
+  }
+
+  .menu-line::after {
+    background: #fcf5ed;
+    position: absolute;
+    top: 8px;
+    content: '';
+    width: 25px;
+    height: 3px;
+    display: block;
+  }
+
+  .menu-line::before {
+    background: #fcf5ed;
+    position: absolute;
+    top: -8px;
+    content: '';
+    width: 25px;
+    height: 3px;
+    display: block;
+  }
+
+  #checkbox:checked ~ .menu-line::after {
+    transform: rotate(45deg);
+    top: 0;
+    background: #000;
+  }
+
+  #checkbox:checked ~ .menu-line {
+    background-color: transparent;
+  }
+
+  #checkbox:checked ~ .menu-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+    background: #000;
+  }
+
+  .main__title_contrasting {
+    letter-spacing: 3px;
+    top: 262px;
+    left: 75px;    
+  }
+
+  .main__title_transparent {
+    margin-left: 18px;
+    font-size: 171px;
+    margin-top: -97px;
+    letter-spacing: 7px;    
+  }
+
+  .main__subtitle {
+    max-width: 78%;
+    margin: -63px 1px 25px 0px;
+    padding: 0px 0 0px 40px;
+    text-align: center;
+    font-size: 17px;
+    word-spacing: 4px;
+    line-height: 21px;
+  }
+
+  .main__button {
+    margin: 43px 0 0 75px;
+  }
+
+  .menu {
+    text-transform: lowercase;
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 157px 38px;
+    background: #fff;
+    z-index: 3;
+    font-weight: 800;
+  }
+
+  #checkbox:checked ~ .menu {
+    visibility: visible;
+    left: 0;
+  }
+
+  .menu__item {
+    display: block;
+    color: #000;
+    margin: 31px 0 0 0;
+    padding: 0;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 268px;
+  }
+
+  .label {
+    z-index: 4;
+  }
+
+  .menu__item-start {
+
+  }
+
+  .menu__item-services {
+
+  }
+
+  .menu__item-about {
+
+  }
+
+  .menu__item-blog {
+
+  }
+
+  .menu__item-contact {
+    margin: 30px 0;
+  }
 }
-    
